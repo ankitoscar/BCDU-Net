@@ -9,12 +9,15 @@ import os
 import h5py
 import numpy as np
 from PIL import Image
+from extract_data import *
 
 
 
 def write_hdf5(arr,outfile):
   with h5py.File(outfile,"w") as f:
     f.create_dataset("image", data=arr, dtype=arr.dtype)
+
+extract_data() # extracting dataset
 
 
 #------------Path of the images --------------------------------------------------------------
