@@ -1,13 +1,10 @@
 from __future__ import division
-from keras.models import Model
-from keras.layers import Input, concatenate, Conv2D, MaxPooling2D, UpSampling2D, Reshape, core, Dropout
-from keras.optimizers import Adam
-from keras.callbacks import ModelCheckpoint, LearningRateScheduler
-from keras import backend as K
-from keras.utils.vis_utils import plot_model as plot
-from keras.optimizers import SGD
-from keras.optimizers import *
-from keras.layers import *        
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input, concatenate, Conv2D, MaxPooling2D, Reshape, Dropout
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.optimizers import *
+from tensorflow.keras.layers import *  
+import numpy as np      
 
 
 
